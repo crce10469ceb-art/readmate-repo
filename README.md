@@ -21,10 +21,6 @@
 | **Resume reading** | Remembers your scroll position and offers *"Continue reading from 42%?"*. |
 | **Export** | Download all highlights and notes as a Markdown file. |
 
-<p>
-  <img src="docs/screenshots/03-pdf-viewer.png" alt="Highlights inside the PDF viewer" width="62%">
-  <img src="docs/screenshots/02-side-panel.png" alt="Side panel library" width="30%">
-</p>
 
 ## Install (developer mode)
 
