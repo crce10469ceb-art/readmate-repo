@@ -4,8 +4,9 @@
 
 > Built with Claude Code as a 3-day project. Plain JavaScript, Manifest V3, no build step.
 
-<!-- Add your demo link here, e.g. [▶ Watch the 90-second demo](https://...) -->
+[![Watch the demo](https://img.youtube.com/vi/01Ebe9bE3iY/hqdefault.jpg)](https://youtu.be/01Ebe9bE3iY)
 
+**[▶ Watch the demo on YouTube](https://youtu.be/01Ebe9bE3iY)**
 
 
 ## Features
