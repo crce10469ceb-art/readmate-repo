@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #525659; font: 14px system-ui, sans-serif; color: #fff; }
+#bar { position: sticky; top: 0; z-index: 10; display: flex; gap: 12px; align-items: center;
+       padding: 8px 16px; background: #323639; box-shadow: 0 2px 6px rgba(0,0,0,.4); }
+#title { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #d1d5db; }
+#another { color: #93c5fd; text-decoration: none; }
+#status { text-align: center; color: #e5e7eb; margin: 16px; }
+#landing { max-width: 520px; margin: 60px auto; padding: 0 16px; text-align: center; }
+#landing h1 { font-size: 22px; }
+.pick { display: inline-block; padding: 12px 18px; background: #2563eb; border-radius: 8px; cursor: pointer; }
+.or { color: #d1d5db; margin: 18px 0 8px; }
+.urlrow { display: flex; gap: 8px; }
+.urlrow input { flex: 1; padding: 9px; border-radius: 6px; border: 0; }
+.urlrow button { padding: 9px 14px; border-radius: 6px; border: 0; cursor: pointer; }
+
+#pages { padding: 12px 0 40px; }
+.page { position: relative; margin: 0 auto 12px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.5); }
+/* The text layer (with the highlights) sits UNDER the page image. The page image is blended with
+   "multiply", so its white background lets the highlight color through while the black text stays sharp.
+   pointer-events:none lets mouse selection reach the text layer underneath. */
+.page .textLayer { position: absolute; inset: 0; z-index: 0; }
+.page canvas { position: absolute; inset: 0; z-index: 1; mix-blend-mode: multiply; pointer-events: none; }

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>ReadMate</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <header>
+    <h1>📖 ReadMate</h1>
+    <input id="search" type="search" placeholder="Search highlights and notes..." />
+    <button id="openPdf" class="small wide">📄 Open PDF viewer</button>
+    <button id="export">Export Markdown</button>
+    <details id="settings">
+      <summary>⚙ AI settings</summary>
+      <input id="apiKey" type="password" placeholder="Anthropic API key (sk-ant-...)" />
+      <button id="saveKey" class="small">Save key</button>
+      <p class="hint">Stored only in this browser. Get a key at console.anthropic.com. Without a key, Summarize gives a quick offline summary; with a key it uses Claude.</p>
+    </details>
+  </header>
+  <section id="continue" hidden>
+    <h2>Continue reading</h2>
+    <div id="continueList"></div>
+  </section>
+  <main id="list"></main>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

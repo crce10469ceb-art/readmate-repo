@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ReadMate PDF Viewer</title>
+  <link rel="stylesheet" href="lib/pdf_viewer.css" />
+  <link rel="stylesheet" href="viewer.css" />
+</head>
+<body>
+  <header id="bar">
+    <strong>📖 ReadMate</strong>
+    <span id="title"></span>
+    <a id="another" href="viewer.html">Open another PDF</a>
+  </header>
+
+  <section id="landing" hidden>
+    <h1>Open a PDF in ReadMate</h1>
+    <p>Highlights, notes and summaries work here just like on web pages.</p>
+    <label class="pick">
+      Choose a PDF from your computer
+      <input id="picker" type="file" accept="application/pdf,.pdf" hidden />
+    </label>
+    <p class="or">or paste a PDF link</p>
+    <div class="urlrow">
+      <input id="urlInput" type="url" placeholder="https://example.com/book.pdf" />
+      <button id="urlGo">Open</button>
+    </div>
+  </section>
+
+  <p id="status"></p>
+  <main id="pages"></main>
+
+  <!-- Extension pages can't run inline scripts, so the flag lives in its own file. -->
+  <script src="viewer-init.js"></script>
+  <script src="content.js"></script>
+  <script type="module" src="viewer.js"></script>
+</body>
+</html>
