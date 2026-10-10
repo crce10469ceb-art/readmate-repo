@@ -6,7 +6,7 @@
 
 <!-- Add your demo link here, e.g. [▶ Watch the 90-second demo](https://...) -->
 
-![Highlights and notes on a web page](docs/screenshots/01-web-highlights.png)
+
 
 ## Features
 
